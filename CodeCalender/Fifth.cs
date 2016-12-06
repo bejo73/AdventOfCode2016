@@ -29,7 +29,7 @@ namespace AdventOfCode
                     }
                     counter++;
                 }
-                
+
                 string pos = hash.Substring(5, 1);
                 int position = Int32.MaxValue;
                 try
@@ -39,24 +39,23 @@ namespace AdventOfCode
                 catch (Exception) { }
 
                 //Int32.TryParse(pos, out position);
-                
-                    if (position < 8)
+
+                if (position < 8)
+                {
+                    if (p[position] == null)
                     {
-                        if (p[position] == null)
-                        {
-                            Console.WriteLine("Adding, pos=" + pos + ", val="+ hash.Substring(6, 1));
-                            p[position] = hash.Substring(6, 1);
-                        }
+                        Console.WriteLine("Adding, pos=" + pos + ", val=" + hash.Substring(6, 1));
+                        p[position] = hash.Substring(6, 1);
                     }
-                
+                }
 
                 passwordIncomplete = false;
 
                 for (int j = 0; j < 8; j++)
                 {
-                    if (p[j] == null )
+                    if (p[j] == null)
                     {
-                        Console.WriteLine("Pos="+j+", is null");
+                        Console.WriteLine("Pos=" + j + ", is null");
                         passwordIncomplete = true;
                     }
                 }
@@ -90,15 +89,15 @@ namespace AdventOfCode
                     }
                     counter++;
                 }
-                p[i] = hash.Substring(5, 1); 
+                p[i] = hash.Substring(5, 1);
             }
-            
+
             for (int j = 0; j < 8; j++)
             {
                 Console.Write(p[j]);
             }
         }
-        
+
         private static string CreateMD5(string input)
         {
             using (MD5 md5 = MD5.Create())

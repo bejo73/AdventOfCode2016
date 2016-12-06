@@ -2,34 +2,10 @@
 using System.Linq;
 using System.IO;
 using System.Collections.Generic;
+using AdventOfCode.Helpers;
 
 namespace AdventOfCode
 {
-    public class Letter
-    {
-        public int Count { get; set; }
-        public string Name { get; set; }
-
-        public bool IsGreater(Letter letter)
-        {
-            bool result = false;
-
-            if (this.Count > letter.Count)
-            {
-                result = true;
-            }
-            else if (this.Count == letter.Count)
-            {
-                if (Char.Parse(this.Name) < Char.Parse(letter.Name))
-                {
-                    result = true;
-                }
-            }
-
-            return result;
-        }
-    }
-
     public class Room
     {
         private string checksum;
@@ -52,8 +28,6 @@ namespace AdventOfCode
 
             int sectorIdStart = room.LastIndexOf("-");
             this.sectorId = Int32.Parse(room.Substring(sectorIdStart + 1, (checksumStart - (sectorIdStart + 1))));
-
-          
 
             this.name = room.Substring(0, sectorIdStart);
             this.CreateCheckSum();
@@ -133,7 +107,7 @@ namespace AdventOfCode
             int sectorIdSum = 0;
 
             string line;
-            StreamReader file = new StreamReader(@".\rooms.txt");
+            StreamReader file = new StreamReader(@".\Data\rooms.txt");
 
             List<Room> rooms = new List<Room>();
 

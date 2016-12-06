@@ -47,8 +47,8 @@
     <Compile Include="Fifth.cs" />
     <Compile Include="First.cs" />
     <Compile Include="Fourth.cs" />
+    <Compile Include="Helpers\Triangle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SecondB.cs" />
     <Compile Include="Second.cs" />
     <Compile Include="Sixth.cs" />
     <Compile Include="Third.cs" />
@@ -57,7 +57,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="rooms.txt">
+    <Content Include="Data\rooms.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Sixth.txt">
@@ -66,13 +66,17 @@
     <Content Include="Data\Sixth_test.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="triangles.txt">
+    <Content Include="Tasks\1.txt" />
+    <Content Include="Tasks\2.txt" />
+    <Content Include="Tasks\3.txt" />
+    <Content Include="Tasks\4.txt" />
+    <Content Include="Tasks\5.txt" />
+    <Content Include="Tasks\6.txt" />
+    <Content Include="Data\triangles.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Helpers\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

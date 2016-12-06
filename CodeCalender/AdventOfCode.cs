@@ -6,8 +6,9 @@ namespace AdventOfCode
     {
         static void Main()
         {
-            First.Run();
-            //Second.Run();
+            //First.Run();
+            //Second.RunA();
+            //Second.RunB();
             //Third.Run();
             //Fourth.Run();
             //Fifth.RunA();
