@@ -10,11 +10,13 @@ namespace AdventOfCode
             //Second.RunA();
             //Second.RunB();
             //Third.Run();
-            Fourth.Run();
+            //Fourth.Run();
             //Fifth.RunA();
             //Fifth.RunB();
             //Sixth.Run();
+            Seventh.Run();
 
+            Console.WriteLine("Merry Christmas...");
             Console.ReadKey();
         }
     }
