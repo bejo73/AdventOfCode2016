@@ -12,12 +12,14 @@ namespace AdventOfCode
     {
         public static void Run()
         {
+            const int X = 50, Y = 6;
+
             string line;
             StreamReader file = new StreamReader(@".\Data\Eight.txt");
 
             List<string> strings = new List<string>();
 
-            int[,] screen = new int[50, 6];
+            int[,] screen = new int[X, Y];
 
             while ((line = file.ReadLine()) != null)
             {
@@ -43,20 +45,20 @@ namespace AdventOfCode
                     int y = Int32.Parse(m.Groups[1].Value);
                     int shift = Int32.Parse(m.Groups[2].Value);
 
-                    int[] t = new int[50];
-                    for (int i = 0; i < 50; i++)
+                    int[] t = new int[shift];
+                    for (int i = 0; i < shift; i++)
                     {
-                        t[i] = screen[i, y];
+                        t[i] = screen[(X-shift) + i, y];
                     }
 
-                    for (int j = 0; j < 50 - shift; j++)
+                    for (int j = (X - 1); j >= shift; j--)
                     {
-                        screen[j + shift, y] = t[j];
+                        screen[j, y] = screen[j - shift, y];
                     }
 
-                    for (int j = 50 - shift; j < 50; j++)
+                    for (int j = 0 ; j < shift; j++)
                     {
-                        screen[j - 50 + shift, y] = t[j];
+                        screen[j , y] = t[j];
                     }
 
                     continue;
