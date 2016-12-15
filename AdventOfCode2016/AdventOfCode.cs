@@ -17,8 +17,8 @@ namespace AdventOfCode
             //Seventh.Run();
             //Eight.Run();
             //Ninth.Run();
-            //Tenth.Run();
-            Eleven.Run();
+            Tenth.Run();
+            //Eleven.Run();
 
             Console.WriteLine("Merry Christmas...");
             Console.ReadKey();

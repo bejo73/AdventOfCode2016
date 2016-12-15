@@ -98,6 +98,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Tasks\1.txt" />
+    <Content Include="Tasks\10.txt" />
     <Content Include="Tasks\11.txt" />
     <Content Include="Tasks\2.txt" />
     <Content Include="Tasks\3.txt" />

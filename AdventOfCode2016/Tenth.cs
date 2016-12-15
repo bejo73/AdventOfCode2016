@@ -13,10 +13,6 @@ namespace AdventOfCode
             string line;
             StreamReader file = new StreamReader(@".\Data\Tenth.txt");
 
-            List<string> strings = new List<string>();
-
-            
-
             Dictionary<int, Bot> bots = new Dictionary<int, Bot>();
 
             Queue<int> q = new Queue<int>();
@@ -25,15 +21,11 @@ namespace AdventOfCode
 
             while ((line = file.ReadLine()) != null)
             {
-                Console.WriteLine(line);
-
                 Match m = Regex.Match(line, "value ([0-9]*) goes to bot ([0-9]*)");
                 if (m.Success)
                 {
                     int v = Int32.Parse(m.Groups[1].Value);
                     int b = Int32.Parse(m.Groups[2].Value);
-
-                    Console.WriteLine("value: " + v + ", bot: " + b);
 
                     if (bots.ContainsKey(b))
                     {
@@ -61,8 +53,6 @@ namespace AdventOfCode
                     int h = Int32.Parse(m.Groups[3].Value);
                     string s1 = m.Groups[4].Value;
                     int h1 = Int32.Parse(m.Groups[5].Value);
-
-                    Console.WriteLine("bot {0} low to {1} {2}, high to {3} {4}", l, s, h, s1, h1);
 
                     if (bots.ContainsKey(l))
                     {
@@ -126,7 +116,6 @@ namespace AdventOfCode
                         bots.Add(l, bot);
                     }
 
-
                     continue;
                 }
 
@@ -165,6 +154,8 @@ namespace AdventOfCode
 
                 bot.ResetMicroships();
             }
+
+            Console.WriteLine(outputs[0] * outputs[1] * outputs[2]);
         }
     }
 }
