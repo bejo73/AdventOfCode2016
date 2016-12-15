@@ -45,23 +45,37 @@
   <ItemGroup>
     <Compile Include="AdventOfCode.cs" />
     <Compile Include="Eight.cs" />
+    <Compile Include="Eleven.cs" />
     <Compile Include="Fifth.cs" />
     <Compile Include="First.cs" />
     <Compile Include="Fourth.cs" />
+    <Compile Include="Helpers\Bot.cs" />
+    <Compile Include="Helpers\Elevator.cs" />
+    <Compile Include="Helpers\Floor.cs" />
+    <Compile Include="Helpers\Generator.cs" />
     <Compile Include="Helpers\IPv7.cs" />
     <Compile Include="Helpers\Letter.cs" />
+    <Compile Include="Helpers\Microchip.cs" />
     <Compile Include="Helpers\Room.cs" />
     <Compile Include="Helpers\Triangle.cs" />
+    <Compile Include="Ninth.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Second.cs" />
     <Compile Include="Seventh.cs" />
     <Compile Include="Sixth.cs" />
+    <Compile Include="Tenth.cs" />
     <Compile Include="Third.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\Ninth1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Ninth.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Data\rooms.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -75,6 +89,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Eight.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Tenth.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Tenth_Test.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Tasks\1.txt" />
