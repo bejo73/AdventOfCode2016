@@ -28,6 +28,7 @@ namespace AdventOfCode
             //Eighteen.Run();
             //Nineteen.Run();
             //Nineteen.RunPart2();
+            Twenty.Run();
 
             Console.WriteLine("Merry Christmas...");
             Console.ReadKey();

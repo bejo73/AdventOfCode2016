@@ -60,6 +60,7 @@
     <Compile Include="Helpers\IPv7.cs" />
     <Compile Include="Helpers\Letter.cs" />
     <Compile Include="Helpers\Microchip.cs" />
+    <Compile Include="Helpers\Range.cs" />
     <Compile Include="Helpers\Room.cs" />
     <Compile Include="Helpers\Triangle.cs" />
     <Compile Include="Nineteen.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Tenth.cs" />
     <Compile Include="Third.cs" />
     <Compile Include="Twelve.cs" />
+    <Compile Include="Twenty.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -110,10 +112,14 @@
     <Content Include="Data\Tenth_Test.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Data\20.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Tasks\1.txt" />
     <Content Include="Tasks\10.txt" />
     <Content Include="Tasks\11.txt" />
     <Content Include="Tasks\2.txt" />
+    <Content Include="Tasks\20.txt" />
     <Content Include="Tasks\3.txt" />
     <Content Include="Tasks\4.txt" />
     <Content Include="Tasks\5.txt" />
