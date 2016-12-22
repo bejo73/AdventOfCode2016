@@ -1,21 +1,9 @@
-﻿using System;
+﻿using AdventOfCode.Helpers;
+using System;
 using System.Collections.Generic;
 
 namespace AdventOfCode
 {
-    class Coordinate
-    {
-        public int x { get; set; }
-        public int y { get; set; }
-
-        public Coordinate() { }
-
-        public string getUnique()
-        {
-            return "" + x + y;
-        }
-    }
-
     class First
     {
         enum Direction { North, South, West, East };

@@ -53,6 +53,7 @@
     <Compile Include="Fourteen.cs" />
     <Compile Include="Fourth.cs" />
     <Compile Include="Helpers\Bot.cs" />
+    <Compile Include="Helpers\Coordinate.cs" />
     <Compile Include="Helpers\Disc.cs" />
     <Compile Include="Helpers\Elevator.cs" />
     <Compile Include="Helpers\Elf.cs" />
@@ -99,7 +100,7 @@
     <Content Include="Data\rooms.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Seventh.txt">
+    <Content Include="Data\7.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Sixth.txt">
@@ -108,7 +109,7 @@
     <Content Include="Data\Sixth_test.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Eight.txt">
+    <Content Include="Data\8.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Tenth.txt">
@@ -136,6 +137,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Tasks\7.txt" />
+    <Content Include="Tasks\8.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
