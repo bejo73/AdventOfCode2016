@@ -38,8 +38,6 @@ namespace AdventOfCode
                 }
                 catch (Exception) { }
 
-                //Int32.TryParse(pos, out position);
-
                 if (position < 8)
                 {
                     if (p[position] == null)

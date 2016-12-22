@@ -10,8 +10,8 @@ namespace AdventOfCode
         public static void Run()
         {
             string line;
-            //StreamReader file = new StreamReader(@".\Data\Sixth_test.txt");
-            StreamReader file = new StreamReader(@".\Data\Sixth.txt");
+            //StreamReader file = new StreamReader(@".\Data\6_Test.txt");
+            StreamReader file = new StreamReader(@".\Data\6.txt");
 
             List<string> strings = new List<string>();
 

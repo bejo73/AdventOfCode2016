@@ -17,7 +17,7 @@ namespace AdventOfCode
             //}
 
             string line;
-            StreamReader file = new StreamReader(@".\data\triangles.txt");
+            StreamReader file = new StreamReader(@".\data\3.txt");
 
             int i = 0;
             Triangle[] triangles = new Triangle[3];

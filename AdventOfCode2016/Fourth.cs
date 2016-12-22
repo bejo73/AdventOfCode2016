@@ -19,7 +19,7 @@ namespace AdventOfCode
             int sectorIdSum = 0;
 
             string line;
-            StreamReader file = new StreamReader(@".\Data\rooms.txt");
+            StreamReader file = new StreamReader(@".\Data\4.txt");
 
             List<Room> rooms = new List<Room>();
 
