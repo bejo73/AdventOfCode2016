@@ -1,10 +1,6 @@
 ﻿using AdventOfCode.Helpers;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdventOfCode
 {
@@ -12,12 +8,8 @@ namespace AdventOfCode
     {
         public static void Run()
         {
-            //string address = "sabbag[afta]jkdjf";
-
             string line;
-            StreamReader file = new StreamReader(@".\Data\Seventh.txt");
-
-            List<string> strings = new List<string>();
+            StreamReader file = new StreamReader(@".\Data\7.txt");
 
             int numberOfAddressesWithTLSSupport = 0;
             int numberOfAddressesWithSSLSupport = 0;
@@ -36,8 +28,8 @@ namespace AdventOfCode
                 }
             }
 
-            Console.WriteLine(numberOfAddressesWithTLSSupport);
-            Console.WriteLine(numberOfAddressesWithSSLSupport);
+            Console.WriteLine("TLS: " + numberOfAddressesWithTLSSupport);
+            Console.WriteLine("SSL: " + numberOfAddressesWithSSLSupport);
         }
     }
 }

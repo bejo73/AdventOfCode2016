@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace AdventOfCode
 {
@@ -15,9 +11,7 @@ namespace AdventOfCode
             const int X = 50, Y = 6;
 
             string line;
-            StreamReader file = new StreamReader(@".\Data\Eight.txt");
-
-            List<string> strings = new List<string>();
+            StreamReader file = new StreamReader(@".\Data\8.txt");
 
             int[,] screen = new int[X, Y];
 
@@ -90,7 +84,6 @@ namespace AdventOfCode
                 }
             }
 
-
             int c = 0;
 
             for (int i = 0; i < screen.GetLength(0); i++)
@@ -99,12 +92,10 @@ namespace AdventOfCode
                 {
                     Console.WriteLine("x={0}, y={1} => {2}", i, j, screen[i, j]);
 
-                    //Console.Write(screen[i, j]);
-
                     if (screen[i, j] == 1)
+                    {
                         c++;
-
-                    //screen[i, j] = i * 3 + j;
+                    }
                 }
             }
 
