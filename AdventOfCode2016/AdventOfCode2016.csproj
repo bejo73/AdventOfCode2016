@@ -53,6 +53,7 @@
     <Compile Include="Fourteen.cs" />
     <Compile Include="Fourth.cs" />
     <Compile Include="Helpers\Bot.cs" />
+    <Compile Include="Helpers\Disc.cs" />
     <Compile Include="Helpers\Elevator.cs" />
     <Compile Include="Helpers\Elf.cs" />
     <Compile Include="Helpers\Floor.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Third.cs" />
     <Compile Include="Twelve.cs" />
     <Compile Include="Twenty.cs" />
+    <Compile Include="TwentyOne.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -83,6 +85,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\12_Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\21_Test.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\Ninth1.txt">
@@ -113,6 +118,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\20.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\21.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Tasks\1.txt" />

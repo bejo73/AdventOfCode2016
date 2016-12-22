@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace AdventOfCode
 {
@@ -25,10 +23,8 @@ namespace AdventOfCode
                 var result = b.Select(x => x == '1' ? '0' : (x == '0' ? '1' : x)).ToArray();
                 b = new String(result);
 
-
                 o.Append(a).Append("0").Append(b);
 
-                //Console.WriteLine(o);
                 if (o.Length >= length)
                 {
                     Console.WriteLine("1");
@@ -43,7 +39,6 @@ namespace AdventOfCode
                 StringBuilder u = new StringBuilder(); ;
                 for (int i = 0; i < output.Length; i = i + 2)
                 {
-
                     string j = output.Substring(i, 2);
                     if (Regex.IsMatch(j, @"(.)\1"))
                     {
@@ -53,7 +48,6 @@ namespace AdventOfCode
                     {
                         u.Append("0");
                     }
-
                 }
 
                 if ((u.Length % 2) == 1)
@@ -64,9 +58,6 @@ namespace AdventOfCode
                 }
                 output = u.ToString();
             }
-            
-
         }
-
     }
 }
