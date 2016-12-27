@@ -29,11 +29,11 @@ namespace AdventOfCode
             //Nineteen.Run();
             //Nineteen.RunPart2();
             //Twenty.Run();
-            TwentyOne.Run();
+            //TwentyOne.Run();
             //TwentyTwo.Run();
-            //TwentyThree.Run();
+            Day23_SafeCracking.Run();
             //TwentyFour.Run();
-            //TwentyFive.Run();
+            //Day25_ClockSignal.Run();
 
 
 

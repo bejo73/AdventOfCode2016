@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdventOfCode.cs" />
+    <Compile Include="Day23_SafeCracking.cs" />
+    <Compile Include="Day25_ClockSignal.cs" />
     <Compile Include="Eight.cs" />
     <Compile Include="Eighteen.cs" />
     <Compile Include="Eleven.cs" />
@@ -82,6 +84,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\23.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\23_Test.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\25.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Data\12.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -97,16 +108,16 @@
     <Content Include="Data\Ninth.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\rooms.txt">
+    <Content Include="Data\4.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\7.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Sixth.txt">
+    <Content Include="Data\6.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Data\Sixth_test.txt">
+    <Content Include="Data\6_Test.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\8.txt">
@@ -133,7 +144,7 @@
     <Content Include="Tasks\4.txt" />
     <Content Include="Tasks\5.txt" />
     <Content Include="Tasks\6.txt" />
-    <Content Include="Data\triangles.txt">
+    <Content Include="Data\3.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Tasks\7.txt" />

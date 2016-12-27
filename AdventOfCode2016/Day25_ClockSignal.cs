@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace AdventOfCode
 {
-    class Twelve
+    class Day25_ClockSignal
     {
         public static void Run()
         {
@@ -22,11 +22,11 @@ dec a
 
             int reg_a = 0;
             int reg_b = 0;
-            int reg_c = 1;
+            int reg_c = 0;
             int reg_d = 0;
 
             string line;
-            StreamReader file = new StreamReader(@".\Data\12.txt");
+            StreamReader file = new StreamReader(@".\Data\25.txt");
             List<string> lines = new List<string>();
 
             while ((line = file.ReadLine()) != null)
@@ -38,12 +38,12 @@ dec a
             {
                 string str = lines[i];
                 Console.WriteLine(i + ", " + str);
-                Match m = Regex.Match(lines[i], "(cpy|inc|dec|jnz) ([0-9a-z]*)[ ]{0,1}([-0-9a-z]*)");
+                Match m = Regex.Match(lines[i], "(cpy|inc|dec|jnz|out) ([0-9a-z]*)[ ]{0,1}([-0-9a-z]*)");
                 if (m.Success)
                 {
                     string instruction = m.Groups[1].Value;
-                    string argument1   = m.Groups[2].Value;
-                    string argument2   = m.Groups[3].Value;
+                    string argument1 = m.Groups[2].Value;
+                    string argument2 = m.Groups[3].Value;
 
                     switch (instruction)
                     {
@@ -51,7 +51,7 @@ dec a
 
                             int v = 0;
 
-                            if(!Int32.TryParse(argument1, out v))
+                            if (!Int32.TryParse(argument1, out v))
                             {
                                 switch (argument1)
                                 {
@@ -69,7 +69,7 @@ dec a
                                         break;
                                 }
                             }
-                            
+
                             switch (argument2)
                             {
                                 case "a":
@@ -153,22 +153,25 @@ dec a
                                     //f = op;
                                 }
 
-                                
+
 
                                 if (steps > 0)
                                 {
-                                    i = i + (steps -1);
+                                    i = i + (steps - 1);
                                 }
                                 else if (steps < 0)
                                 {
-                                    i = i + (steps -1);
+                                    i = i + (steps - 1);
                                 }
                             }
-                            
+
+                            break;
+                        case "out":
+                            Console.WriteLine(argument1);
                             break;
                     }
 
-                    
+
                 }
             }
             Console.WriteLine(reg_a);
