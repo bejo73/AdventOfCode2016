@@ -135,22 +135,22 @@
     <Content Include="Data\21.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Tasks\1.txt" />
+    <Content Include="Tasks\01.txt" />
     <Content Include="Tasks\10.txt" />
     <Content Include="Tasks\11.txt" />
-    <Content Include="Tasks\2.txt" />
+    <Content Include="Tasks\02.txt" />
     <Content Include="Tasks\20.txt" />
     <Content Include="Tasks\25.txt" />
     <Content Include="Tasks\23.txt" />
-    <Content Include="Tasks\3.txt" />
-    <Content Include="Tasks\4.txt" />
-    <Content Include="Tasks\5.txt" />
-    <Content Include="Tasks\6.txt" />
+    <Content Include="Tasks\03.txt" />
+    <Content Include="Tasks\04.txt" />
+    <Content Include="Tasks\05.txt" />
+    <Content Include="Tasks\06.txt" />
     <Content Include="Data\3.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Tasks\7.txt" />
-    <Content Include="Tasks\8.txt" />
+    <Content Include="Tasks\07.txt" />
+    <Content Include="Tasks\08.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
