@@ -31,9 +31,9 @@ namespace AdventOfCode
             //Twenty.Run();
             //TwentyOne.Run();
             //TwentyTwo.Run();
-            Day23_SafeCracking.Run();
+            //Day23_SafeCracking.Run();
             //TwentyFour.Run();
-            //Day25_ClockSignal.Run();
+            Day25_ClockSignal.Run();
 
 
 
