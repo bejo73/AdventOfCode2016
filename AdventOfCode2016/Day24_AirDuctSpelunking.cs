@@ -58,7 +58,7 @@ namespace AdventOfCode
                     string key = "" + current.Id + end.Id;
 
                     //Get object from cache and return it, if its there
-                    string val = (string)cache.Get(key);
+                    var val = (string)cache.Get(key);
                     if (val != null)
                     {
                         int intval = Int32.Parse(val);
@@ -110,6 +110,60 @@ namespace AdventOfCode
                     closed.Clear();
                     open.Add(current);
                 }
+
+                /* Part II
+                // Add Start -> End
+                current = start;
+                var valw = (string)cache.Get("" + current.Id + end.Id);
+                if (valw != null)
+                {
+                    int intval = Int32.Parse(valw);
+                    Console.WriteLine(", steps: {0}", intval);
+                    total = total + intval;
+                }
+                else
+                {
+                    current.ParentNode = null;
+                    open.Clear();
+                    closed.Clear();
+                    open.Add(current);
+                    while (true)
+                    {
+                        // Find adjacent nodes
+                        List<Node> adjacent = GetAdjacentNodes(current, room);
+
+                        // Add to open list
+                        open.AddRange(adjacent);
+
+                        // Remove current node from open list and add to closed list
+                        open.Remove(current);
+                        closed.Add(current);
+
+                        // Find next node with lowest cost
+                        int lowestCost = Int32.MaxValue;
+                        foreach (Node n in open)
+                        {
+                            int cost = Math.Abs(end.X - n.X) + Math.Abs(end.Y - n.Y) + n.Cost;
+                            if (cost < lowestCost)
+                            {
+                                lowestCost = cost;
+                                current = n;
+                            }
+                        }
+
+                        if (current.X == end.X && current.Y == end.Y)
+                        {
+                            int steps = CountPath(current);
+
+                            cache.Add("" + current.Id + end.Id, "" + steps, policy);
+
+                            Console.WriteLine(", steps: {0}", steps);
+                            total = total + steps;
+                            break;
+                        }
+                    }
+                }
+                */
 
                 current = start;
                 current.ParentNode = null;
