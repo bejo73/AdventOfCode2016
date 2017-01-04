@@ -20,7 +20,7 @@ namespace AdventOfCode
             //Tenth.Run();
             //Eleven.Run();
             //Twelve.Run();
-            Day13_MazeOfTwistyLittleCubicles.Run();
+            //Day13_MazeOfTwistyLittleCubicles.Run();
             //Fourteen.Run2();
             //Fifteen.Run();
             //Sixteen.Run();
@@ -32,7 +32,7 @@ namespace AdventOfCode
             //TwentyOne.Run();
             //TwentyTwo.Run();
             //Day23_SafeCracking.Run();
-            //TwentyFour.Run();
+            Day24_AirDuctSpelunking.Run();
             //Day25_ClockSignal.Run();
 
             Console.WriteLine("Merry Christmas...");
