@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode2015", "AdventO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode2016", "AdventOfCode2016\AdventOfCode2016.csproj", "{F1A96627-CF89-4B8C-A7B1-9156E7D87532}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode2017", "AdventOfCode2017\AdventOfCode2017\AdventOfCode2017.csproj", "{867FAEAF-19EF-49F6-87D6-9FE987639CC7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode2017", "AdventOfCode2017\AdventOfCode2017.csproj", "{867FAEAF-19EF-49F6-87D6-9FE987639CC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
