@@ -56,11 +56,9 @@ namespace AdventOfCode2017
                 }
                 else
                 {
-                    //int u = 2 * i - input.Length;
                     int u = (i + input.Length / 2) - input.Length;
                     if (input[i].CompareTo(input[u]) == 0)
                     {
-                        Console.WriteLine("Match2, " + input[i] + ", " + input[0]);
                         int a = Int32.Parse(input[i].ToString());
                         sum = sum + a;
                     }
