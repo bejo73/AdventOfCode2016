@@ -6,9 +6,9 @@ namespace AdventOfCode2017
     {
         static void Main()
         {
-            Day1.Run();
-            Day2.Run();
-            //Day3.Run();
+            //Day1.Run();
+            //Day2.Run();
+            Day3.Run();
 
             Console.WriteLine("Merry Christmas...");
             Console.ReadKey();

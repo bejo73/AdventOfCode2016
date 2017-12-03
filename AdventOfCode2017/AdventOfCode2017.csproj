@@ -46,9 +46,12 @@
     <Compile Include="AdventOfCode.cs" />
     <Compile Include="Day1.cs" />
     <Compile Include="Day2.cs" />
+    <Compile Include="Day3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Data\2.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
