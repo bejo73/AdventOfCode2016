@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
-
 using System.Linq;
 
 namespace AdventOfCode2017
@@ -95,19 +94,22 @@ namespace AdventOfCode2017
             Program bottom = programs.Find(p => p.Under == null);
             Console.WriteLine("Day7 (1): " + bottom.Name);
 
+
             foreach (var o in bottom.Above)
             {
                 Program a = programs.Find(pr => pr.Name == o.Trim());
-                Console.WriteLine("*******************************************" + a.Name);
+
+                Console.WriteLine("START: " + a.Name);
 
                 if (a != null)
                 {
                     int w = getWeight(a);
 
-                    Console.WriteLine("*******************************************" + a.Name + ": " + a.Weight + ", " + w);
+                    Console.WriteLine("END: " + a.Name + ", a.weight: " + a.Weight + ", getWeight(a): " + w);
                 }
 
             }
+
             Console.WriteLine("     (2): ");
         }
 
@@ -115,28 +117,37 @@ namespace AdventOfCode2017
         {
             int weight = p.Weight;
 
-            Console.Write(" start ("+p.Name+"): " + weight);
+            //Console.Write(" start ("+p.Name+"): " + weight);
+
             int aboveWeight = 0;
+
             if (p.Above != null)
             {
-                HashSet<int> hi = new HashSet<int>();
-
-                
                 foreach (string item in p.Above)
                 {
                     Program a = programs.Find(pr => pr.Name == item);
-                    aboveWeight = aboveWeight + getWeight(a);
-
-                    hi.Add(weight);
+                    aboveWeight = aboveWeight + getWeight(a);  
                 }
 
-                Console.Write(" above (" + p.Name + "): " + aboveWeight);
+                //                Console.Write(" above (" + p.Name + "): " + aboveWeight);
 
+                if ((aboveWeight % p.Above.Count) != 0)
+                {
+                    Console.WriteLine("p.Weight: " + p.Weight + ", aboveWeight: " + aboveWeight + ", name: "+ p.Name);
 
+                    foreach(string item in p.Above)
+                    {
+                        Program a = programs.Find(pr => pr.Name == item);
+                        Console.WriteLine("" + a.Weight + ", " + getWeight(a));
+                    }
 
-                weight = weight + aboveWeight;
-
+                }
+                else
+                {
+                    //Console.WriteLine("p.Weight: " + p.Weight);
+                }
                 
+                weight = weight + aboveWeight;
             }
             else
             {
@@ -147,10 +158,10 @@ namespace AdventOfCode2017
 
             //if (weight p.Weight + aboveWeight))
             //{
-                Console.WriteLine("HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH " + p.Weight + ", " + aboveWeight + ", " + weight);
+               // Console.WriteLine("HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH " + p.Weight + ", " + aboveWeight + ", " + weight);
             //}
 
-            Console.WriteLine(" end (" + p.Name + "): " + weight);
+  //          Console.WriteLine(" end (" + p.Name + "): " + weight);
             return weight;
         }
 
