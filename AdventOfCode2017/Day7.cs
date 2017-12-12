@@ -133,6 +133,7 @@ namespace AdventOfCode2017
 
                 if ((aboveWeight % p.Above.Count) != 0)
                 {
+                    Console.WriteLine("" + aboveWeight % p.Above.Count);
                     Console.WriteLine("p.Weight: " + p.Weight + ", aboveWeight: " + aboveWeight + ", name: "+ p.Name);
 
                     foreach(string item in p.Above)
@@ -140,7 +141,6 @@ namespace AdventOfCode2017
                         Program a = programs.Find(pr => pr.Name == item);
                         Console.WriteLine("" + a.Weight + ", " + getWeight(a));
                     }
-
                 }
                 else
                 {
