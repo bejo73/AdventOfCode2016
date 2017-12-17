@@ -17,7 +17,12 @@ namespace AdventOfCode2017
             //Day9.Run(); // Stream Processing
             //Day10.Run(); // Knot Hash (Part 2 not started)
             //Day11.Run(); // Hex Ed
-            Day12.Run();
+            //Day12.Run(); //
+            //*Day13.Run();
+            //*Day14.Run(); // Disk Defragmentation
+            //Day15.Run(); // Dueling Generators
+            //Day16.Run(); // Permutation Promenade
+            //Day17.Run(); // Spinlock
 
             Console.WriteLine("Merry Christmas...");
             Console.ReadKey();
