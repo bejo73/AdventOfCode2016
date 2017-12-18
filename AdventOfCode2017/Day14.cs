@@ -59,59 +59,8 @@ namespace AdventOfCode2017
             return sb.ToString();
         }
 
-
-        public static string GetKnotHash(string key)
-        {
-            var input = key
-    .Select(c => (int)c)
-    .Concat(new[] { 17, 31, 73, 47, 23 })
-    .ToList();
-
-            int skip = 0, index = 0, len = 256;
-            var list = len.Times();
-
-            foreach (var num in input.Repeat(64))
-            {
-                list = list.Skip(index).Concat(list.Take(index));
-                list = list.Take(num).Reverse().Concat(list.Skip(num));
-                list = list.Skip(len - index).Concat(list.Take(len - index));
-
-                index = (num + index + skip) % len;
-                ++skip;
-            }
-
-            list.BatchesOf(16)
-                .Select(batch => batch.Aggregate((x, y) => x ^ y))
-                .Select(hash => hash.ToString("x2"))
-                .Join("").PrintDump();
-
-            return list.BatchesOf(16)
-                .Select(batch => batch.Aggregate((x, y) => x ^ y))
-                .Select(hash => hash.ToString("x2"))
-                .Join("").ToString();
-                //.PrintDump();
-        }
-
         public const int LIST_LENGTH = 256;
-        /*
-        public static string PartOne(string input)
-        {
-            var lengths = input.Words().Select(x => int.Parse(x)).ToList();
 
-            var list = Enumerable.Range(0, LIST_LENGTH).ToArray();
-            var cur = 0;
-            var skip = 0;
-
-            foreach (var length in lengths)
-            {
-                list = TieKnot(list, cur, skip, length);
-                cur += length + skip++;
-                cur %= LIST_LENGTH;
-            }
-
-            return (list[0] * list[1]).ToString();
-        }
-        */
         private static int[] TieKnot(int[] list, int cur, int skip, int length)
         {
             var subList = new int[length];

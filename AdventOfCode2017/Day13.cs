@@ -119,11 +119,6 @@ namespace AdventOfCode2017
         }
     }
 
-    class Firewall
-    {
-        public List<Layer> layers;
-    }
-
     class Layer
     {
         public int range;
