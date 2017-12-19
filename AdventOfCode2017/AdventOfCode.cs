@@ -23,7 +23,8 @@ namespace AdventOfCode2017
             //Day15.Run(); // Dueling Generators
             //Day16.Run(); // Permutation Promenade
             //Day17.Run(); // Spinlock
-            Day18.Run();
+            //Day18.Run();
+            Day19.Run();
 
             Console.WriteLine("Merry Christmas...");
             Console.ReadKey();
