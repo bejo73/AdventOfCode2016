@@ -15,16 +15,16 @@ namespace AdventOfCode2017
             //Day7.Run(); // Recursive Circus
             //Day8.Run(); // I Heard You Like Registers
             //Day9.Run(); // Stream Processing
-            //Day10.Run(); // Knot Hash (Part 2 not started)
+            //*Day10.Run(); // Knot Hash
             //Day11.Run(); // Hex Ed
-            //Day12.Run(); //
-            //*Day13.Run();
+            //Day12.Run(); // Digital Plumber
+            //*Day13.Run(); // Packet Scanners
             //*Day14.Run(); // Disk Defragmentation
             //Day15.Run(); // Dueling Generators
             //Day16.Run(); // Permutation Promenade
             //Day17.Run(); // Spinlock
-            //Day18.Run();
-            Day19.Run();
+            //*Day18.Run(); // Duet
+            //Day19.Run(); // A Series of Tubes
 
             Console.WriteLine("Merry Christmas...");
             Console.ReadKey();
