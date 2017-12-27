@@ -25,6 +25,7 @@ namespace AdventOfCode2017
             //Day17.Run(); // Spinlock
             //*Day18.Run(); // Duet
             //Day19.Run(); // A Series of Tubes
+            Day23.Run(); // Coprocessor Conflagration
 
             Console.WriteLine("Merry Christmas...");
             Console.ReadKey();
