@@ -73,6 +73,7 @@
   <ItemGroup>
     <Compile Include="AdventOfCode.cs" />
     <Compile Include="Day1.cs" />
+    <Compile Include="Day24.cs" />
     <Compile Include="Day17.cs" />
     <Compile Include="Day16.cs" />
     <Compile Include="Day15.cs" />
@@ -99,13 +100,16 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\24.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\24_Test_1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Data\16.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\18.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Data\23.2.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\23.txt">

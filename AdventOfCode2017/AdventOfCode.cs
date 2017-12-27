@@ -25,7 +25,8 @@ namespace AdventOfCode2017
             //Day17.Run(); // Spinlock
             //*Day18.Run(); // Duet
             //Day19.Run(); // A Series of Tubes
-            Day23.Run(); // Coprocessor Conflagration
+            //Day23.Run(); // Coprocessor Conflagration
+            Day24.Run(); //  Electromagnetic Moat
 
             Console.WriteLine("Merry Christmas...");
             Console.ReadKey();
