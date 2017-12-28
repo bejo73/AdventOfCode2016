@@ -26,7 +26,8 @@ namespace AdventOfCode2017
             //*Day18.Run(); // Duet
             //Day19.Run(); // A Series of Tubes
             //Day23.Run(); // Coprocessor Conflagration
-            Day24.Run(); //  Electromagnetic Moat
+            //Day24.Run(); // Electromagnetic Moat
+            Day25.Run(); // The Halting Problem
 
             Console.WriteLine("Merry Christmas...");
             Console.ReadKey();
