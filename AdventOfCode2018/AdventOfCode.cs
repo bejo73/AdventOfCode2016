@@ -7,8 +7,8 @@ namespace AdventOfCode2017
         
         static void Main()
         {
-            //Day1.Run(); // Inverse Captcha
-            //Day2.Run(); // Corruption Checksum
+            //Day1.Run(); // Chronal Calibration
+            Day2.Run(); // Inventory Management System
             //Day3.Run(); // Spiral Memory
             //Day4.Run(); // High-Entropy Passphrases
             //Day5.Run(); // A Maze of Twisty Trampolines, All Alike
@@ -25,7 +25,7 @@ namespace AdventOfCode2017
             //Day16.Run(); // Permutation Promenade
             //Day17.Run(); // Spinlock
             //Day18.Run(); // Duet
-            Day18Part2.Day18Part2.Run();
+            //Day18Part2.Day18Part2.Run();
             //ProgramTest.Do();
             //Day19.Run(); // A Series of Tubes
             //Day23.Run(); // Coprocessor Conflagration
