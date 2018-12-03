@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace AdventOfCode2017
+namespace AdventOfCode2018
 {
     class Day2
     {

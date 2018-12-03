@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AdventOfCode2017
+namespace AdventOfCode2018
 {
     class AdventOfCode
     {
@@ -8,8 +8,8 @@ namespace AdventOfCode2017
         static void Main()
         {
             //Day1.Run(); // Chronal Calibration
-            Day2.Run(); // Inventory Management System
-            //Day3.Run(); // Spiral Memory
+            //Day2.Run(); // Inventory Management System
+            Day3.Run(); // 
             //Day4.Run(); // High-Entropy Passphrases
             //Day5.Run(); // A Maze of Twisty Trampolines, All Alike
             //Day6.Run(); // Memory Reallocation

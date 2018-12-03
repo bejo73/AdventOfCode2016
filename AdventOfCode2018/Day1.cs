@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace AdventOfCode2017
+namespace AdventOfCode2018
 {
     public class Day1
     {
@@ -17,7 +17,7 @@ namespace AdventOfCode2017
             bool notFound = true;
 
             bool firstRound = true;
-            using (StreamReader frequencyChangesReader = new StreamReader(@".\Data\2.txt"))
+            using (StreamReader frequencyChangesReader = new StreamReader(@".\Data\1.txt"))
             {
                 while (notFound)
                 {
