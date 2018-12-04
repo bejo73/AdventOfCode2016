@@ -7,10 +7,10 @@ namespace AdventOfCode2018
         
         static void Main()
         {
-            //Day1.Run(); // Chronal Calibration
+            //Day01.Run(); // Chronal Calibration
             //Day2.Run(); // Inventory Management System
-            Day3.Run(); // 
-            //Day4.Run(); // High-Entropy Passphrases
+            //Day3.Run(); // 
+            Day04.Run(); // High-Entropy Passphrases
             //Day5.Run(); // A Maze of Twisty Trampolines, All Alike
             //Day6.Run(); // Memory Reallocation
             //Day7.Run(); // Recursive Circus

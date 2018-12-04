@@ -4,7 +4,7 @@ using System.IO;
 
 namespace AdventOfCode2018
 {
-    public class Day1
+    public class Day01
     {
         public static void Run()
         {
