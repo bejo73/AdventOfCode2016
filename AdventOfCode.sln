@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2050
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode2015", "AdventOfCode2015\AdventOfCode2015.csproj", "{3534C8F3-8E82-42E7-8DF7-0B8A1C987EB6}"
 EndProject
@@ -10,6 +10,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode2017", "AdventOfCode2017\AdventOfCode2017.csproj", "{867FAEAF-19EF-49F6-87D6-9FE987639CC7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode2018", "AdventOfCode2018\AdventOfCode2018.csproj", "{E41A26A8-C9F8-4B27-83CC-F3686B19178B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventOfCode2019", "AdventOfCode2019\AdventOfCode2019.csproj", "{5FF6F857-964D-4E49-914A-38AAC99AC327}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode2020", "AdventOfCode2020\AdventOfCode2020\AdventOfCode2020.csproj", "{C847585C-6219-4C27-A905-5941776AE20C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{E41A26A8-C9F8-4B27-83CC-F3686B19178B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E41A26A8-C9F8-4B27-83CC-F3686B19178B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E41A26A8-C9F8-4B27-83CC-F3686B19178B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FF6F857-964D-4E49-914A-38AAC99AC327}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FF6F857-964D-4E49-914A-38AAC99AC327}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FF6F857-964D-4E49-914A-38AAC99AC327}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FF6F857-964D-4E49-914A-38AAC99AC327}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C847585C-6219-4C27-A905-5941776AE20C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C847585C-6219-4C27-A905-5941776AE20C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C847585C-6219-4C27-A905-5941776AE20C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C847585C-6219-4C27-A905-5941776AE20C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
