@@ -8,8 +8,8 @@ namespace AdventOfCode2020
         static void Main()
         {
             //Day01.Run(); // Report Repair
-            Day02.Run(); // Password Philosophy
-            //Day03.Run(); // 
+            //Day02.Run(); // Password Philosophy
+            Day03.Run(); // Toboggan Trajectory
             //Day04.Run() //
             //Day05.Run(); //
             //Day06.Run(); //
