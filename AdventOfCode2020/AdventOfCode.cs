@@ -4,7 +4,6 @@ namespace AdventOfCode2020
 {
     class AdventOfCode
     {
-        
         static void Main()
         {
             //Day01.Run(); // Report Repair
@@ -13,8 +12,8 @@ namespace AdventOfCode2020
             //Day04.Run(); // Passport Processing
             //Day05.Run(); // Binary Boarding
             //Day06.Run(); // Custom Customs
-            //Day07.Run(); // Handy Haversacks
-            Day08.Run(); // Handheld Halting
+            Day07.Run(); // Handy Haversacks
+            //Day08.Run(); // Handheld Halting
             //Day09.Run(); //
             //Day10.Run(); //
             //Day11.Run(); //
