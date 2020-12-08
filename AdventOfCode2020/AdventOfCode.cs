@@ -7,14 +7,14 @@ namespace AdventOfCode2020
         
         static void Main()
         {
-            Day01.Run(); // Report Repair
+            //Day01.Run(); // Report Repair
             //Day02.Run(); // Password Philosophy
             //Day03.Run(); // Toboggan Trajectory
-            //Day04.Run() //
-            //Day05.Run(); //
-            //Day06.Run(); //
-            //Day07.Run(); //
-            //Day08.Run(); //
+            //Day04.Run(); // Passport Processing
+            //Day05.Run(); // Binary Boarding
+            //Day06.Run(); // Custom Customs
+            //Day07.Run(); // Handy Haversacks
+            Day08.Run(); // Handheld Halting
             //Day09.Run(); //
             //Day10.Run(); //
             //Day11.Run(); //
