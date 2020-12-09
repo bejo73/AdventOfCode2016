@@ -12,9 +12,9 @@ namespace AdventOfCode2020
             //Day04.Run(); // Passport Processing
             //Day05.Run(); // Binary Boarding
             //Day06.Run(); // Custom Customs
-            Day07.Run(); // Handy Haversacks
+            //Day07.Run(); // Handy Haversacks
             //Day08.Run(); // Handheld Halting
-            //Day09.Run(); //
+            Day09.Run(); //
             //Day10.Run(); //
             //Day11.Run(); //
             //Day12.Run(); //
