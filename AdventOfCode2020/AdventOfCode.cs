@@ -14,8 +14,8 @@ namespace AdventOfCode2020
             //Day06.Run(); // Custom Customs
             //Day07.Run(); // Handy Haversacks
             //Day08.Run(); // Handheld Halting
-            Day09.Run(); //
-            //Day10.Run(); //
+            //Day09.Run(); // Encoding Error
+            Day10.Run(); // Adapter Array
             //Day11.Run(); //
             //Day12.Run(); //
             //Day13.Run(); //
