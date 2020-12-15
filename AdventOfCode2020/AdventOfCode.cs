@@ -15,12 +15,12 @@ namespace AdventOfCode2020
             //Day07.Run(); // Handy Haversacks
             //Day08.Run(); // Handheld Halting
             //Day09.Run(); // Encoding Error
-            Day10.Run(); // Adapter Array
-            //Day11.Run(); //
+            //Day10.Run(); // Adapter Array
+            //Day11.Run(); // Seating System
             //Day12.Run(); //
-            //Day13.Run(); //
+            //Day13.Run(); // Shuttle Search
             //Day14.Run(); //
-            //Day15.Run(); //
+            Day15.Run(); //
             //Day16.Run(); //
             //Day17.Run(); //
             //Day18.Run(); //
