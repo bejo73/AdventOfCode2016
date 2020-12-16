@@ -14,6 +14,13 @@ namespace AdventOfCode2020
 
             List<Number> numbers = new List<Number>();
 
+            int TURNS_PART_1 = 2020;
+            int TURNS_PART_2 = 30000000;
+
+            int[] spokenNumbers = new int[TURNS_PART_2];
+
+            int index = 0;
+            int lastNumberSpoken = 0;
             while ((line = file.ReadLine()) != null)
             {
                 string[] strArray = line.Split(',');
@@ -21,18 +28,30 @@ namespace AdventOfCode2020
                 for (int a = 0; a < strArray.Length; a++)
                 {
                     numbers.Add(new Number() { value = int.Parse(strArray[a]), turn = a + 1 });
+                    
+                    index++;
+                    lastNumberSpoken = int.Parse(strArray[a]);
+                    spokenNumbers[lastNumberSpoken] = index;
                 }
+
+                // reset 
+                spokenNumbers[lastNumberSpoken] = 0;
             }
 
-            int turn = numbers.Count;
-            int lastNumberSpoken = 0;
+            // Save to part 2
+            int lastNumberSpokenStart = lastNumberSpoken;
+            int turnsStart = numbers.Count; ;
 
-            while (turn < 2021)
+            // Part 1 
+            int turn = numbers.Count;
+            int previousTurn = turn - 1;
+
+            while (turn <= TURNS_PART_1)
             {
                 turn++;
 
                 lastNumberSpoken = numbers.Last().value;
-                int previousTurn = turn - 1;
+                previousTurn = turn - 1;
 
                 if (numbers.Count(n => n.value == lastNumberSpoken) > 1)
                 {
@@ -46,7 +65,35 @@ namespace AdventOfCode2020
             }
 
             Console.WriteLine("Day10 (1): " + lastNumberSpoken);
-            Console.WriteLine("      (2): " + "TBD");
+
+            // Part 2 - Optimized
+            turn = turnsStart;
+            lastNumberSpoken = lastNumberSpokenStart;
+
+            int spoken = 0;
+
+            while (turn <= TURNS_PART_2)
+            {
+                previousTurn = turn;
+                turn++;
+                
+                if (spokenNumbers[lastNumberSpoken] == 0)
+                {
+                    spoken = 0;             
+                }
+                else
+                {
+                    spoken = previousTurn - spokenNumbers[lastNumberSpoken];
+                }
+
+                spokenNumbers[lastNumberSpoken] = previousTurn;
+                lastNumberSpoken = spoken;
+            }
+
+            int maxValue = spokenNumbers.Max();
+            int maxIndex = spokenNumbers.ToList().IndexOf(maxValue);
+
+            Console.WriteLine("      (2): " + maxIndex);
         }
     }
 
@@ -55,5 +102,4 @@ namespace AdventOfCode2020
         public int value;
         public int turn;
     }
-
 }

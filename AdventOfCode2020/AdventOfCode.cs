@@ -17,11 +17,11 @@ namespace AdventOfCode2020
             //Day09.Run(); // Encoding Error
             //Day10.Run(); // Adapter Array
             //Day11.Run(); // Seating System
-            //Day12.Run(); //
+            //Day12.Run(); // Rain Risk
             //Day13.Run(); // Shuttle Search
-            //Day14.Run(); //
-            Day15.Run(); //
-            //Day16.Run(); //
+            //Day14.Run(); // Docking Data
+            Day15.Run(); // Rambunctious Recitation
+            //Day16.Run(); // Ticket Translation
             //Day17.Run(); //
             //Day18.Run(); //
             //Day19.Run(); //
