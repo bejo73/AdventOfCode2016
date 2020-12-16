@@ -19,8 +19,8 @@ namespace AdventOfCode2020
             //Day11.Run(); // Seating System
             //Day12.Run(); // Rain Risk
             //Day13.Run(); // Shuttle Search
-            //Day14.Run(); // Docking Data
-            Day15.Run(); // Rambunctious Recitation
+            Day14.Run(); // Docking Data
+            //Day15.Run(); // Rambunctious Recitation
             //Day16.Run(); // Ticket Translation
             //Day17.Run(); //
             //Day18.Run(); //
